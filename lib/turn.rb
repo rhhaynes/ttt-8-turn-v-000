@@ -33,6 +33,6 @@ def turn(array)
     puts "Please enter 1-9:"
     index = input_to_index(gets.strip)
   end
-  move(array,index,"O")
+  move(array,index,"X")
   display_board(array)
 end
