@@ -34,4 +34,5 @@ def turn(array,token)
     index = input_to_index(gets.strip)
   end
   move(array,index,token)
+  display_board(array)
 end
