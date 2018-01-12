@@ -26,13 +26,13 @@ def input_to_index(input)
   index = input.to_i-1
 end
 
-def turn(array,token)
+def turn(array)
   puts "Please enter 1-9:"
   index = input_to_index(gets.strip)
   until valid_move?(array,index)
     puts "Please enter 1-9:"
     index = input_to_index(gets.strip)
   end
-  move(array,index,token)
+  move(array,index,"O")
   display_board(array)
 end
