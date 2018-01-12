@@ -27,7 +27,7 @@ def input_to_index(input)
 end
 
 def turn(array)
-  index = 0
+  index = 9
   until valid_move?(array,index)
     puts "Please enter 1-9:"
     index = input_to_index(gets.strip)
